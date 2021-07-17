@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Feed from '../pages/Feed';
 import Subjects from '../pages/Subjects';
 import Settings from '../pages/Settings';
-// import Dashboard from '../pages/Dashboard';
+import FeedSVG from '../assets/FeedSVG';
 
 const Tab = createBottomTabNavigator();
 
@@ -13,7 +13,7 @@ const Tabs = () => {
     return (
         <Tab.Navigator
             tabBarOptions={{
-                showLabel: false,
+                
                 style: {
                     position: 'absolute',
                     bottom: 25, 
@@ -27,7 +27,20 @@ const Tabs = () => {
             }}
         
         >
-            <Tab.Screen name="Feed" component={Feed} />
+            <Tab.Screen name="Feed" component={Feed} 
+              options={{
+                tabBarIcon: ({focused}) => {
+                  <View style={{
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    top: 10,
+                  }}>
+                    <FeedSVG />
+                  </View>
+                }
+              }}
+            
+            />
             <Tab.Screen name="Subjects" component={Subjects} />
             <Tab.Screen name="Settings" component={Settings} />
         </Tab.Navigator>
