@@ -34,9 +34,9 @@ const Tabs = () => {
     );
 }
 
-const style = Stylesheet.create({
-    shadow: {
-    }
-});
+// const style = Stylesheet.create({
+//     shadow: {
+//     }
+// });
 
 export default Tabs;
