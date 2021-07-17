@@ -5,6 +5,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import Welcome from './pages/Welcome.js';
 import Introduction from './pages/Introduction.js';
+import Result from './pages/Result.js';
 import StartOne from './pages/StartOne.js';
 
 const Stack = createStackNavigator();
@@ -28,6 +29,11 @@ export const App = () => {
             options={{headerShown : false}}
             name="StartOne"
             component={StartOne}
+          />
+          <Stack.Screen
+            options={{ headerShown: false }}
+            name="Res"
+            component={Result}
           />
         </Stack.Navigator>
       </NavigationContainer>
