@@ -14,7 +14,12 @@ export const App = () => {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator
+          screenOptions={{
+            headerStyle: { elevation: 0 },
+            cardStyle: { backgroundColor: '#fff' }
+          }}
+        >
           <Stack.Screen
             options={{headerShown : false}}
             name="Home"

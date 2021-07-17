@@ -1,42 +1,96 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import ContinueButton from '../components/ContinueButton';
+import CareerOption from '../components/CareerOption';
+
+import Career from '../assets/CareerSVG';
+import Physicist from '../assets/PhysicistSVG';
+import Engineer from '../assets/EngineerSVG';
+import Chemist from '../assets/ChemistSVG';
+import Programmer from '../assets/ProgrammerSVG';
 
 export const StartOne = ({ navigation }) => {
+  const [selection, setSelection] = React.useState({});
+
   return (
-    <View style={styles.container}>
-      <View style={styles.title}>
-        <Text style={{ fontSize: 36, fontWeight: '500' }}>
-          To start,{' '}
-          choose at least{' '}
-          2 professions{' '}
-          of interest.{' '}
-        <Text style={{ color: "#E76F51", fontWeight: 'bold' }}>
-          Footsteps
+    <SafeAreaView style={styles.container}>
+      <View style={styles.top}>
+        <Text style={{ fontSize: 24, fontWeight: '500', maxWidth: 180 }}>
+          To start,{"\n"}
+          choose at least{"\n"}
+          <Text style={{ color: "#E76F51", fontWeight: 'bold' }}>
+            2 professions
+          </Text>
+          {"\n"}of interest.{"\n"}
         </Text>
-        </Text>
+        <Career />
       </View>
-      <ContinueButton navigation={navigation} text="Continue" />
-    </View>
+      <View style={styles.mid}>
+        <CareerOption
+          Icon={Physicist}
+          text="Physicist"
+          stateFunc={setSelection}
+          state={selection}
+          colour="#48A9A6"
+        />
+        <View style={{width: 12}}/>
+        <CareerOption
+          Icon={Engineer}
+          text="Engineer"
+          stateFunc={setSelection}
+          state={selection}
+          colour="#e9c46a"
+        />
+      </View>
+      <View style={styles.mid}>
+        <CareerOption
+          Icon={Chemist}
+          text="Chemist"
+          stateFunc={setSelection}
+          state={selection}
+          colour="#642ca9"
+        />
+        <View style={{width: 12}}/>
+        <CareerOption
+          Icon={Programmer}
+          text="Programmer"
+          stateFunc={setSelection}
+          state={selection}
+          colour="#0D324D"
+        />
+      </View>
+      <ContinueButton onPress={() => navigation.navigate('StartTwo')} text="Continue" />
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
+    display: 'flex',
     alignItems: 'center',
-    justifyContent: 'space-around',
+    justifyContent: 'flex-start',
   },
   top: {
-    marginBottom: 'auto'
-  },
-  title: {
-    maxWidth: 200,
+    marginTop: 80,
     marginLeft: 45,
-    alignSelf: 'flex-start',
+    marginRight: 45,
+    alignSelf: 'stretch',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  mid: {
+    alignSelf: 'stretch',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    
   }
 });
 

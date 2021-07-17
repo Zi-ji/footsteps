@@ -1,13 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import PagerView from 'react-native-pager-view';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import ThinkingSVG from '../assets/ThinkingSVG';
 import BookSVG from '../assets/BookSVG';
 
 import ContinueButton from '../components/ContinueButton';
 
-export const Introduction = () => {
+export const Introduction = ({ navigation }) => {
 
   const [showContinue, setShowContinue] = React.useState(false);
 
@@ -18,7 +19,7 @@ export const Introduction = () => {
   }
 
 return (
-    <View style={{ flex: 1}}>
+    <SafeAreaView style={{ flex: 1}}>
       <PagerView
         style={styles.viewPager}
         initialPage={0}
@@ -63,8 +64,8 @@ A mentor from the industry will be there to guide you through your journey.`}
           </View>
         </View>
       </PagerView>
-      {showContinue && <ContinueButton style={{alignSelf: 'center'}} text="Continue" />}
-    </View>
+      {showContinue && <ContinueButton onPress={() => navigation.navigate('StartOne')} text="Continue" />}
+    </SafeAreaView>
   );
 };
 
