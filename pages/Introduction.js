@@ -12,7 +12,7 @@ return (
         <View style={styles.page} key="1">
           <ThinkingSVG />
           <View style={{...styles.texts, ...styles.boldTexts}}>
-            <Text style={{ fontSize: 24, fontWeight: 'bold' }}>Not sure about what you can study in the future?</Text>
+            <Text style={{ fontSize: 24, fontWeight: 'bold' }}>Not sure what you want to study in the future?</Text>
           </View>
           <View style={styles.texts}>
             <Text style={{ fontSize: 24, fontWeight: '500' }}>
@@ -22,6 +22,14 @@ return (
         </View>
         <View style={styles.page} key="2">
           <BookSVG />
+          <View style={{...styles.texts, ...styles.boldTexts}}>
+            <Text style={{ fontSize: 24, fontWeight: 'bold' }}>Not sure about what you can study in the future?</Text>
+          </View>
+          <View style={styles.texts}>
+            <Text style={{ fontSize: 24, fontWeight: '500' }}>
+              {'Footsteps is an innovative learning method that promotes learning by intuition and first principles through a mentorship environment.'}
+            </Text>
+          </View>
         </View>
         <View style={styles.page} key="3">
           <Text>Third page</Text>
