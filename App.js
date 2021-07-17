@@ -22,41 +22,35 @@ export const App = () => {
         <Stack.Navigator
           screenOptions={{
             headerStyle: { elevation: 0 },
-            cardStyle: { backgroundColor: '#fff' }
+            cardStyle: { backgroundColor: '#fff' },
+            headerShown : false
           }}
         >
           <Stack.Screen
-            options={{headerShown : false}}
             name="Home"
             component={Welcome}
           />
           <Stack.Screen
-            options={{headerShown : false}}
             name="Intro"
             component={Introduction}
           />
           <Stack.Screen
-            options={{headerShown : false}}
             name="StartOne"
             component={StartOne}
           />
           <Stack.Screen
-            options={{headerShown : false}}
             name="StartTwo"
             component={StartTwo}
           />
           <Stack.Screen
-            options={{headerShown : false}}
             name="ResultOne"
             component={ResultOne}
           />
           <Stack.Screen
-            options={{ headerShown: false }}
             name="ResultTwo"
             component={ResultTwo}
           />
           <Stack.Screen
-            options={{ headerShown: false }}
             name="Subjects"
             component={Tab}
           />
