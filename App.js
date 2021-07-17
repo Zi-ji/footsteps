@@ -51,13 +51,14 @@ export const App = () => {
             component={ResultTwo}
           />
           <Stack.Screen
-            name="Subjects"
+            name="TabNav"
             component={Tab}
             screenOptions={{gestureEnabled: false}}
           />
           <Stack.Screen
             name="PhysicsOne"
             component={PhysicsOne}
+            options={{headerShown : true}}
           />
         </Stack.Navigator>
       </NavigationContainer>
