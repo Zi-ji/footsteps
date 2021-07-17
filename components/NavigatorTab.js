@@ -34,7 +34,7 @@ const Tabs = () => {
     );
 }
 
-const style = StyleSheet.create({
+const style = Stylesheet.create({
     shadow: {
     }
 });

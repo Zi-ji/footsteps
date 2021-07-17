@@ -23,7 +23,7 @@ export const App = () => {
             cardStyle: { backgroundColor: '#fff' }
           }}
         >
-          <Stack.Screen
+          {/* <Stack.Screen
             options={{headerShown : false}}
             name="Home"
             component={Welcome}
@@ -47,12 +47,12 @@ export const App = () => {
             options={{ headerShown: false }}
             name="Res"
             component={Result}
-          />
-          {/* <Stack.Screen
+          /> */}
+          <Stack.Screen
             options={{ headerShown: false }}
             name="Subjects"
             component={Tab}
-          /> */}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
