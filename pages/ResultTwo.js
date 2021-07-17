@@ -3,8 +3,6 @@ import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import PagerView from 'react-native-pager-view';
 
-import ThinkingSVG from '../assets/ThinkingSVG';
-import BookSVG from '../assets/BookSVG';
 import BlockSVG from '../assets/BlockSVG';
 import PointSVG from '../assets/PointSVG';
 
@@ -59,7 +57,7 @@ export const ResultTwo = ({ navigation }) => {
           </Text>
         </View>
         </PagerView>
-        <ContinueButton navigation={navigation} text="Let's begin!" />
+        <ContinueButton onPress={() => navigation.navigate('Subjects')} text="Let's begin!" />
     </SafeAreaView>
     );
 };
