@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Welcome from './pages/Welcome.js';
 import Introduction from './pages/Introduction.js';
+import Result from './pages/Result.js';
 
 const Stack = createStackNavigator();
 
@@ -15,12 +16,17 @@ export const App = () => {
           options={{headerShown : false}}
           name="Home"
           component={Welcome}
-        />
+          />
         <Stack.Screen
           options={{headerShown : false}}
           name="Intro"
           component={Introduction}
-        />
+          />
+          {/* <Stack.Screen
+            options={{ headerShown: false }}
+            name="Res"
+            component={Result}
+          /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
