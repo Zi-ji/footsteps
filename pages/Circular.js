@@ -4,8 +4,14 @@ import CircularSVG from '../assets/CircularMotionSVG'
 
 export const Circular = () => {
   return (
-    <View>
+    <View style={{
+      flex: 1,
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}>
       <CircularSVG />
+      {/* We ran out of time here. Sorry! */}
     </View>
   );
 };

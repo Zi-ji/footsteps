@@ -4,8 +4,14 @@ import FlashCardSVG from '../assets/FlashCardSVG'
 
 export const FlashCard = () => {
   return (
-    <View>
+    <View style={{
+      flex: 1,
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}>
       <FlashCardSVG />
+      {/* We ran out of time here. Sorry! */}
     </View>
   );
 };

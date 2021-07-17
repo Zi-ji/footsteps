@@ -17,6 +17,7 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import Quiz from './pages/Quiz.js';
 import Circular from './pages/Circular.js';
 import FlashCard from './pages/FlashCard.js';
+import MentorChat from './pages/MentorChat';
 
 const Stack = createStackNavigator();
 
@@ -96,24 +97,165 @@ export const App = () => {
                   <Text style={{color: '#ffffff', fontWeight: '600', fontSize: 16,}}>Level 2</Text>
                   <Text style={{color: '#a3d4d2', fontSize: 16,}}>/10</Text>
                 </TouchableOpacity>
-            ),
+              ),
             }}
           />
+          
           <Stack.Screen
             name="Circular"
             component={Circular}
-            options={{headerShown : true}}
+            options={{
+              title: 'Circular Motion',
+              headerShown: true,
+              headerStyle: {
+                height: 150,
+                borderBottomLeftRadius: 28,
+                borderBottomRightRadius: 28,
+                backgroundColor: '#48A9A6',
+              },
+              headerTitleStyle: {
+                color: '#ffffff',
+                fontSize: 24,
+              },
+              headerLeftContainerStyle: {
+                paddingTop: 20,
+                paddingLeft: 20,
+              },
+              headerRightContainerStyle: {
+                paddingTop: 20,
+                paddingRight: 25,
+              },
+              headerTitleContainerStyle: {
+                paddingTop: 20,
+              },
+              headerTintColor: '#ffffff',
+              headerTitleAlign: 'left',
+              headerBackTitleVisible: false,
+              headerRight: () => (
+                <TouchableOpacity style={{alignItems: 'flex-end'}}>
+                  <Text style={{color: '#ffffff', fontWeight: '600', fontSize: 16,}}>Physics</Text>
+                  <Text style={{color: '#ffffff', fontWeight: '600', fontSize: 16,}}>Level 1</Text>
+                </TouchableOpacity>
+              ),
+            }}
           />
+          
           <Stack.Screen
             name="FlashCard"
             component={FlashCard}
-            options={{headerShown : true}}
+            options={{
+              title: 'Revision',
+              headerShown: true,
+              headerStyle: {
+                height: 150,
+                borderBottomLeftRadius: 28,
+                borderBottomRightRadius: 28,
+                backgroundColor: '#48A9A6',
+              },
+              headerTitleStyle: {
+                color: '#ffffff',
+                fontSize: 24,
+              },
+              headerLeftContainerStyle: {
+                paddingTop: 20,
+                paddingLeft: 20,
+              },
+              headerRightContainerStyle: {
+                paddingTop: 20,
+                paddingRight: 25,
+              },
+              headerTitleContainerStyle: {
+                paddingTop: 20,
+              },
+              headerTintColor: '#ffffff',
+              headerTitleAlign: 'left',
+              headerBackTitleVisible: false,
+              headerRight: () => (
+                <TouchableOpacity style={{alignItems: 'flex-end'}}>
+                  <Text style={{color: '#ffffff', fontWeight: '600', fontSize: 16,}}>Physics</Text>
+                  <Text style={{color: '#ffffff', fontWeight: '600', fontSize: 16,}}>Level 1</Text>
+                </TouchableOpacity>
+              ),
+            }}
           />
+          
           <Stack.Screen
             name="Quiz"
             component={Quiz}
-            options={{headerShown : true}}
+            options={{
+              title: 'Question 5/10',
+              headerShown: true,
+              headerStyle: {
+                height: 150,
+                borderBottomLeftRadius: 28,
+                borderBottomRightRadius: 28,
+                backgroundColor: '#48A9A6',
+              },
+              headerTitleStyle: {
+                color: '#ffffff',
+                fontSize: 24,
+              },
+              headerLeftContainerStyle: {
+                paddingTop: 20,
+                paddingLeft: 20,
+              },
+              headerRightContainerStyle: {
+                paddingTop: 20,
+                paddingRight: 25,
+              },
+              headerTitleContainerStyle: {
+                paddingTop: 20,
+              },
+              headerTintColor: '#ffffff',
+              headerTitleAlign: 'left',
+              headerBackTitleVisible: false,
+              headerRight: () => (
+                <TouchableOpacity style={{alignItems: 'flex-end'}}>
+                  <Text style={{color: '#ffffff', fontWeight: '600', fontSize: 16,}}>Physics</Text>
+                  <Text style={{color: '#ffffff', fontWeight: '600', fontSize: 16,}}>Final Quiz</Text>
+                </TouchableOpacity>
+              ),
+            }}
           />
+          
+          <Stack.Screen
+            name="MentorChat"
+            component={MentorChat}
+            options={{
+              title: 'Physics',
+              headerShown: true,
+              headerStyle: {
+                height: 150,
+                borderBottomLeftRadius: 28,
+                borderBottomRightRadius: 28,
+                backgroundColor: '#48A9A6',
+              },
+              headerTitleStyle: {
+                color: '#ffffff',
+                fontSize: 24,
+              },
+              headerLeftContainerStyle: {
+                paddingTop: 20,
+                paddingLeft: 20,
+              },
+              headerRightContainerStyle: {
+                paddingTop: 20,
+                paddingRight: 25,
+              },
+              headerTitleContainerStyle: {
+                paddingTop: 20,
+              },
+              headerTintColor: '#ffffff',
+              headerTitleAlign: 'left',
+              headerBackTitleVisible: false,
+              headerRight: () => (
+                <TouchableOpacity style={{alignItems: 'flex-end'}}>
+                  <Text style={{color: '#ffffff', fontWeight: '600', fontSize: 16,}}>Mentor Chat</Text>
+                </TouchableOpacity>
+              ),
+            }}
+          />
+          
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
