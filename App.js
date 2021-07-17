@@ -7,6 +7,8 @@ import Welcome from './pages/Welcome.js';
 import Introduction from './pages/Introduction.js';
 import Result from './pages/Result.js';
 import StartOne from './pages/StartOne.js';
+import Subjects from './pages/Subjects.js';
+import Tab from './components/NavigatorTab';
 
 const Stack = createStackNavigator();
 
@@ -35,6 +37,11 @@ export const App = () => {
             name="Res"
             component={Result}
           />
+          {/* <Stack.Screen
+            options={{ headerShown: false }}
+            name="Subjects"
+            component={Tab}
+          /> */}
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
