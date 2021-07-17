@@ -7,8 +7,8 @@ import BookSVG from '../assets/BookSVG';
 
 export const Introduction = () => {
 return (
-    <View style={{ flex: 1 }}>
-      <PagerView style={styles.viewPager} initialPage={0}>
+    <View style={{ flex: 1, justifyContent: 'center' }}>
+      <PagerView style={styles.viewPager} initialPage={0} showPageIndicator>
         <View style={styles.page} key="1">
           <ThinkingSVG />
           <View style={{...styles.texts, ...styles.boldTexts}}>
@@ -23,16 +23,26 @@ return (
         <View style={styles.page} key="2">
           <BookSVG />
           <View style={{...styles.texts, ...styles.boldTexts}}>
-            <Text style={{ fontSize: 24, fontWeight: 'bold' }}>Not sure about what you can study in the future?</Text>
+            <Text style={{ fontSize: 24, fontWeight: 'bold' }}>What you'll be learning?</Text>
           </View>
           <View style={styles.texts}>
             <Text style={{ fontSize: 24, fontWeight: '500' }}>
-              {'Footsteps is an innovative learning method that promotes learning by intuition and first principles through a mentorship environment.'}
+              {'You’ll be learning the different areas and skills that relate to your chosen professions.'}
             </Text>
           </View>
         </View>
         <View style={styles.page} key="3">
-          <Text>Third page</Text>
+          <BookSVG />
+          <View style={{...styles.texts, ...styles.boldTexts}}>
+            <Text style={{ fontSize: 24, fontWeight: 'bold' }}>How you’ll be learning</Text>
+          </View>
+          <View style={styles.texts}>
+            <Text style={{ fontSize: 24, fontWeight: '500' }}>
+              {`Each syllabus is designed by an industry professional.
+
+They will contain modules that build upon first principles and encourages an experimental approach to learning.`}
+            </Text>
+          </View>
         </View>
       </PagerView>
     </View>
@@ -41,7 +51,7 @@ return (
 
 const styles = StyleSheet.create({
   viewPager: {
-    flex: 1,
+    flex: 0.8,
   },
   texts: {
     width: 300
