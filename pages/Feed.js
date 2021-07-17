@@ -1,24 +1,27 @@
 import React from 'react';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { StyleSheet, Text, TextInput, View, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+
 import FeedPost from '../assets/FeedPostSVG';
 
 export const Feed = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={{ ...styles.texts, ...styles.boldTexts, ...styles.centerText}}>
+      <ScrollView style={{ ...styles.texts, ...styles.boldTexts, ...styles.centerText}}>
         <Text style={{ 
           fontSize: 36, 
           fontWeight: 'bold', 
           marginLeft: 27,
           marginBottom: 27,
+          marginTop: 80,
         }}>
           Feed
         </Text>
         <View style={styles.post}>
           <FeedPost />
+          {/* We ran out of time here. Sorry! */}
         </View> 
-      </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };
@@ -45,8 +48,9 @@ const styles = StyleSheet.create({
     marginTop: 13,
   },
   post: {
+    display: 'flex',
     justifyContent: 'center',
-  
+    alignItems: 'center',
   }
 });
 

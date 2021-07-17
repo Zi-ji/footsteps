@@ -12,6 +12,8 @@ import Tab from './components/NavigatorTab';
 import StartTwo from './pages/StartTwo.js';
 import ResultOne from './pages/ResultOne';
 import PhysicsOne from './pages/PhysicsOne.js';
+import Header from './components/Header';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +22,7 @@ export const App = () => {
     <SafeAreaProvider>
       <NavigationContainer>
         <Stack.Navigator
+          headerMode="screen"
           screenOptions={{
             headerStyle: { elevation: 0 },
             cardStyle: { backgroundColor: '#fff' },
@@ -51,19 +54,53 @@ export const App = () => {
             component={ResultTwo}
           />
           <Stack.Screen
-            name="TabNav"
+            name="Subjects"
             component={Tab}
             screenOptions={{gestureEnabled: false}}
           />
           <Stack.Screen
             name="PhysicsOne"
             component={PhysicsOne}
-            options={{headerShown : true}}
+            options={{
+              title: 'Physics',
+              headerShown: true,
+              headerStyle: {
+                height: 150,
+                borderBottomLeftRadius: 28,
+                borderBottomRightRadius: 28,
+                backgroundColor: '#48A9A6',
+              },
+              headerTitleStyle: {
+                color: '#ffffff',
+                fontSize: 24,
+              },
+              headerLeftContainerStyle: {
+                paddingTop: 20,
+                paddingLeft: 20,
+              },
+              headerRightContainerStyle: {
+                paddingTop: 20,
+                paddingRight: 20,
+              },
+              headerTitleContainerStyle: {
+                paddingTop: 20,
+              },
+              headerTintColor: '#ffffff',
+              headerTitleAlign: 'left',
+              headerBackTitleVisible: false,
+              headerRight: () => (
+                <TouchableOpacity style={{flexDirection: 'row',}}>
+                  <Text style={{color: '#ffffff', fontWeight: '600', fontSize: 16,}}>Level 2</Text>
+                  <Text style={{color: '#a3d4d2', fontSize: 16,}}>/10</Text>
+                </TouchableOpacity>
+            ),
+            }}
           />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
   );
 }
+
 
 export default App;
