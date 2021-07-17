@@ -5,7 +5,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Feed from '../pages/Feed';
 import Subjects from '../pages/Subjects';
 import Settings from '../pages/Settings';
+
 import FeedSVG from '../assets/FeedSVG';
+import SubjectsIconSVG from '../assets/SubjectsIconSVG';
+import SettingsIconSVG from '../assets/SettingsIconSVG';
 
 const Tab = createBottomTabNavigator();
 
@@ -28,25 +31,25 @@ const Tabs = () => {
           color: '#E76F51',
         },
         activeTintColor: '#E76F51',
-        activeBackgroundColor: '#FEFEFE',
+        showLabel: false,
       }}
       screenOptions={{gestureEnabled: false}}
     >
-      <Tab.Screen name="Feed" component={Feed} 
+      <Tab.Screen name="Feed" component={Feed}
         options={{
-          tabBarIcon: ({focused}) => {
-            <View style={{
-              alignItems: 'center',
-              justifyContent: 'center',
-              top: 10,
-            }}>
-              <FeedSVG />
-            </View>
-          },
+          tabBarIcon: ({ focused }) => <FeedSVG fill={focused ? '#E76F51' : "#969696"} style={{marginTop: 25}} />,
         }}
       />
-      <Tab.Screen name="Subjects" component={Subjects} />
-      <Tab.Screen name="Settings" component={Settings} />
+      <Tab.Screen name="Subjects" component={Subjects} 
+        options={{
+          tabBarIcon: ({ focused }) => <SubjectsIconSVG fill={focused ? '#E76F51' : "#969696"} style={{marginTop: 25}} />,
+        }}
+      />
+      <Tab.Screen name="Settings" component={Settings}
+        options={{
+          tabBarIcon: ({ focused }) => <SettingsIconSVG fill={focused ? '#E76F51' : "#969696"} style={{marginTop: 25}} />,
+        }}
+      />
     </Tab.Navigator>
   );
 }

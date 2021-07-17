@@ -9,13 +9,14 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export const Subjects = ({ navigation }) => {
   return (
-    <View style={styles.container}>
-      <View style={{ ...styles.texts, ...styles.boldTexts, ...styles.centerText}}>
+    <SafeAreaView style={styles.container}>
+      <ScrollView style={{ ...styles.texts, ...styles.boldTexts, ...styles.centerText}}>
         <Text style={{ 
           fontSize: 36, 
           fontWeight: 'bold', 
           marginLeft: 27,
           marginBottom: 27,
+          marginTop: 80,
         }}>
           Subjects
         </Text>
@@ -97,8 +98,8 @@ export const Subjects = ({ navigation }) => {
             </View>
           </View>
         </View>
-      </View>
-    </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
@@ -106,7 +107,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
   },
   subjectCard: {
     display: 'flex',
