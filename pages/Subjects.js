@@ -1,8 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
+
 import MathSVG from '../assets/MathSVG';
 import PhysicsSVG from '../assets/PhysicsSVG';
 import ProgrammingSVG from '../assets/ProgrammingSVG';
+
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 export const Subjects = ({ navigation }) => {
