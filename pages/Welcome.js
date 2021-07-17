@@ -26,7 +26,6 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'space-around',
   },
   top: {
     marginBottom: 'auto'
@@ -35,6 +34,7 @@ const styles = StyleSheet.create({
     maxWidth: 200,
     marginLeft: 45,
     alignSelf: 'flex-start',
+    marginTop: 300,
   }
 });
 

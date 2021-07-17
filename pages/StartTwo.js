@@ -32,7 +32,7 @@ export const StartTwo = ({ navigation }) => {
             <TextInput style={styles.input}/>
           </View>
           <ContinueButton
-            onPress={() => navigation.navigate('Res')}
+            onPress={() => navigation.navigate('ResultTwo')}
             text="Continue"
             style={{alignSelf: 'center', position: 'static', bottom: -40}}
           />
