@@ -1,2 +1,2 @@
-# mentor.me
+# footsteps
 2021-hackathon
