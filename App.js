@@ -24,7 +24,7 @@ export const App = () => {
             cardStyle: { backgroundColor: '#fff' }
           }}
         >
-          <Stack.Screen
+          {/* <Stack.Screen
             options={{headerShown : false}}
             name="Home"
             component={Welcome}
@@ -53,7 +53,7 @@ export const App = () => {
             options={{ headerShown: false }}
             name="ResultTwo"
             component={ResultTwo}
-          />
+          /> */}
           <Stack.Screen
             options={{ headerShown: false }}
             name="Subjects"
