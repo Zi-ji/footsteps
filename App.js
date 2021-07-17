@@ -7,6 +7,7 @@ import Welcome from './pages/Welcome.js';
 import Introduction from './pages/Introduction.js';
 import Result from './pages/Result.js';
 import StartOne from './pages/StartOne.js';
+import StartTwo from './pages/StartTwo.js';
 
 const Stack = createStackNavigator();
 
@@ -29,6 +30,11 @@ export const App = () => {
             options={{headerShown : false}}
             name="StartOne"
             component={StartOne}
+          />
+          <Stack.Screen
+            options={{headerShown : false}}
+            name="StartTwo"
+            component={StartTwo}
           />
           <Stack.Screen
             options={{ headerShown: false }}
