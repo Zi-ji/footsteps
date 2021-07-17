@@ -5,7 +5,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import Welcome from './pages/Welcome.js';
 import Introduction from './pages/Introduction.js';
-import Result from './pages/Result.js';
+import ResultTwo from './pages/ResultTwo.js';
 import StartOne from './pages/StartOne.js';
 import Subjects from './pages/Subjects.js';
 import Tab from './components/NavigatorTab';
@@ -51,8 +51,8 @@ export const App = () => {
           />
           <Stack.Screen
             options={{ headerShown: false }}
-            name="Res"
-            component={Result}
+            name="ResultTwo"
+            component={ResultTwo}
           />
           <Stack.Screen
             options={{ headerShown: false }}

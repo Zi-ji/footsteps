@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import ThinkingSVG from '../assets/ThinkingSVG';
 import BookSVG from '../assets/BookSVG';
+import TutorSVG from '../assets/TutorSVG';
 
 import ContinueButton from '../components/ContinueButton';
 
@@ -40,7 +41,7 @@ return (
         <View style={styles.page} key="2">
           <BookSVG />
           <View style={{...styles.texts, ...styles.boldTexts}}>
-            <Text style={{ fontSize: 24, fontWeight: 'bold' }}>What you'll be learning?</Text>
+            <Text style={{ fontSize: 24, fontWeight: 'bold' }}>What you'll be learning</Text>
           </View>
           <View style={styles.texts}>
             <Text style={{ fontSize: 20, fontWeight: '500' }}>
@@ -49,7 +50,7 @@ return (
           </View>
         </View>
         <View style={styles.page} key="3">
-          <BookSVG />
+          <TutorSVG />
           <View style={{...styles.texts, ...styles.boldTexts}}>
             <Text style={{ fontSize: 24, fontWeight: 'bold' }}>How you’ll be learning</Text>
           </View>

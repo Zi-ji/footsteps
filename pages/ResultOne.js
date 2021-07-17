@@ -32,8 +32,9 @@ export const ResultOne = ({ navigation }) => {
         </View>
       </View>
       <ContinueButton
-        onPress={() => navigation.navigate('Res')}
+        onPress={() => navigation.navigate('ResultTwo')}
         text="Got it"
+
         style={{alignSelf: 'center'}}
       />
     </SafeAreaView>
