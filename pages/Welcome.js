@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import ContinueButton from '../components/ContinueButton';
 
-export const Welcome = () => {
+export const Welcome = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View />
@@ -15,8 +15,7 @@ export const Welcome = () => {
           </Text>
         </Text>
       </View>
-      <ContinueButton style={{}} text="Continue" />
-      <StatusBar style="auto" />
+      <ContinueButton navigation={navigation} text="Continue" />
     </View>
   );
 }

@@ -1,9 +1,13 @@
 import React from 'react';
 import { Text, View, StyleSheet, Pressable } from 'react-native';
 
-export const ContinueButton = ({ text, style }) => {
+export const ContinueButton = ({navigation, text, style }) => {
+
   return (
-    <Pressable style={{...styles.button, ...style}}>
+    <Pressable
+      style={{...styles.button, ...style}}
+      onPress={() => navigation.navigate('Intro')}
+    >
       <Text style={styles.text}>{text}</Text>
     </Pressable>
   );
