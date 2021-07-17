@@ -11,6 +11,7 @@ import Subjects from './pages/Subjects.js';
 import Tab from './components/NavigatorTab';
 import StartTwo from './pages/StartTwo.js';
 import ResultOne from './pages/ResultOne';
+import PhysicsOne from './pages/PhysicsOne.js';
 
 const Stack = createStackNavigator();
 
@@ -53,6 +54,10 @@ export const App = () => {
             name="Subjects"
             component={Tab}
             screenOptions={{gestureEnabled: false}}
+          />
+          <Stack.Screen
+            name="PhysicsOne"
+            component={PhysicsOne}
           />
         </Stack.Navigator>
       </NavigationContainer>

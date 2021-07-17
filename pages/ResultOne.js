@@ -3,8 +3,8 @@ import { StyleSheet, Text, SafeAreaView, View, TextInput } from 'react-native';
 
 import ContinueButton from '../components/ContinueButton';
 import MathsSVG from '../assets/MathsSVG';
-import PhysicsSVG from '../assets/PhysicsSVG';
-import ProgrammingSVG from '../assets/ProgrammingSVG';
+import PhysicsSVG from '../assets/PhysicsIcon';
+import ProgrammingSVG from '../assets/ProgrammingIcon';
 
 export const ResultOne = ({ navigation }) => {
 
