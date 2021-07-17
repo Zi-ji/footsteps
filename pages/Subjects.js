@@ -46,7 +46,10 @@ export const Subjects = ({ navigation }) => {
           </View>
         </View>
         
-        <Pressable style={{...styles.subjectCard, ...styles.physicsGreen}}>
+        <Pressable
+          style={{...styles.subjectCard, ...styles.physicsGreen}}
+          onPress={() => navigation.navigate('PhysicsOne')}
+        >
           <View style={{ ...styles.leftColumn}}>
             <PhysicsSVG />
             <Text style={{ fontSize: 18, fontWeight: 'bold', color: 'white'}}>

@@ -58,6 +58,7 @@ export const App = () => {
           <Stack.Screen
             name="PhysicsOne"
             component={PhysicsOne}
+            options={{headerShown : true}}
           />
         </Stack.Navigator>
       </NavigationContainer>
