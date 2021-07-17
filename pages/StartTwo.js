@@ -7,8 +7,6 @@ import AboutSVG from '../assets/aboutSVG';
 
 export const StartTwo = ({ navigation }) => {
 
-  const [country, setCountry] = React.useState('');
-
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.title}>
@@ -19,9 +17,15 @@ export const StartTwo = ({ navigation }) => {
       </View>
       <View style={styles.inputGroup}>
         <Text style={styles.label}>Your country</Text>
-        <TextInput style={styles.input} onChangeText={text => setCountry(text)} />
+        <TextInput style={styles.input}/>
+      </View>
+      <View style={styles.inputGroup}>
         <Text style={styles.label}>Your age</Text>
+        <TextInput style={styles.ageInput}/>
+      </View>
+      <View style={styles.inputGroup}>
         <Text style={styles.label}>Your current level of education</Text>
+        <TextInput style={styles.input}/>
       </View>
       <ContinueButton
         onPress={() => navigation.navigate('Res')}
@@ -36,33 +40,51 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
-    justifyContent: 'space-around',
+    justifyContent: 'flex-start',
   },
   title: {
+    marginTop: 80,
     alignSelf: 'stretch',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
     marginLeft: 40,
-    marginRight: 40
+    marginRight: 40,
+    marginBottom: 40
   },
   titleText: {
     width: 180
   },
   label: {
     fontSize: 18,
-    fontWeight: '600'
+    fontWeight: '600',
+    marginBottom: 10
   },
   inputGroup: {
     alignSelf: 'stretch',
     marginLeft: 40,
-    marginRight: 40
+    marginRight: 40,
+    marginTop: 20,
+    marginBottom: 20
   },
   input: {
     height: 70,
     width: 320,
     borderRadius: 100,
     backgroundColor: '#EFEFEF',
+    fontSize: 20,
+    paddingLeft: 30,
+    fontWeight: '500'
+  },
+  ageInput: {
+    height: 70,
+    width: 320,
+    borderRadius: 100,
+    backgroundColor: '#EFEFEF',
+    fontSize: 20,
+    fontWeight: '500',
+    textAlign: 'center'
   }
 });
 

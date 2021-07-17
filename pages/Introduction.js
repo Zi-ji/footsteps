@@ -64,7 +64,7 @@ A mentor from the industry will be there to guide you through your journey.`}
           </View>
         </View>
       </PagerView>
-      {showContinue && <ContinueButton onPress={() => navigation.navigate('StartOne')} text="Continue" />}
+      {showContinue && <ContinueButton style={{alignSelf: 'center'}} onPress={() => navigation.navigate('StartOne')} text="Continue" />}
     </SafeAreaView>
   );
 };
