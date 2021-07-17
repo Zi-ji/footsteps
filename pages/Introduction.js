@@ -7,7 +7,7 @@ import BookSVG from '../assets/BookSVG';
 
 import ContinueButton from '../components/ContinueButton';
 
-export const Introduction = () => {
+export const Introduction = ({ navigation }) => {
 
   const [showContinue, setShowContinue] = React.useState(false);
 
@@ -22,7 +22,7 @@ return (
       <PagerView
         style={styles.viewPager}
         initialPage={0}
-        showPageIndicator={!showContinue}
+        showPageIndicator
         onPageScroll={handleOnPageScroll}
       >
         <View style={styles.page} key="1">
@@ -63,7 +63,7 @@ A mentor from the industry will be there to guide you through your journey.`}
           </View>
         </View>
       </PagerView>
-      {showContinue && <ContinueButton style={{alignSelf: 'center'}} text="Continue" />}
+      {showContinue && <ContinueButton onPress={() => navigation.navigate('StartOne')} style={{alignSelf: 'center'}} text="Continue" />}
     </View>
   );
 };
@@ -71,7 +71,6 @@ A mentor from the industry will be there to guide you through your journey.`}
 const styles = StyleSheet.create({
   viewPager: {
     flex: 0.8,
-    marginBottom: 'auto'
   },
   texts: {
     width: 300
