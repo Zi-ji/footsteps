@@ -59,7 +59,7 @@ export const ResultTwo = ({ navigation }) => {
           </Text>
         </View>
         </PagerView>
-        <ContinueButton navigation={navigation} text="Let's begin!" />
+        <ContinueButton onPress={() => navigation.navigate('Subjects')} text="Let's begin!" />
     </SafeAreaView>
     );
 };
