@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, StyleSheet, Pressable } from 'react-native';
 
-export const ContinueButton = ({onPress, text, style }) => {
+export const ContinueButton = ({onPress, text, style}) => {
 
   return (
     <Pressable
