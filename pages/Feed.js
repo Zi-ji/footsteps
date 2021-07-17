@@ -36,7 +36,7 @@ export const Feed = () => {
               Today
             </Text>
             
-          </View>
+
           </View>
         </View>
       </View>
