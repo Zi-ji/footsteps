@@ -26,7 +26,8 @@ export const App = () => {
             headerShown : false
           }}
         >
-          <Stack.Screen
+          {/* <Stack.Screen
+            options={{headerShown : false}}
             name="Home"
             component={Welcome}
           />
@@ -49,7 +50,7 @@ export const App = () => {
           <Stack.Screen
             name="ResultTwo"
             component={ResultTwo}
-          />
+          /> */}
           <Stack.Screen
             name="Subjects"
             component={Tab}
