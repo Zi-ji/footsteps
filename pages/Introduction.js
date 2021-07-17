@@ -1,14 +1,31 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import PagerView from 'react-native-pager-view';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import ThinkingSVG from '../assets/ThinkingSVG';
 import BookSVG from '../assets/BookSVG';
 
-export const Introduction = () => {
+import ContinueButton from '../components/ContinueButton';
+
+export const Introduction = ({ navigation }) => {
+
+  const [showContinue, setShowContinue] = React.useState(false);
+
+  const handleOnPageScroll = (e) => {
+    if (e.nativeEvent.position == 2) {
+      setShowContinue(true);
+    }
+  }
+
 return (
-    <View style={{ flex: 1, justifyContent: 'center' }}>
-      <PagerView style={styles.viewPager} initialPage={0} showPageIndicator>
+    <SafeAreaView style={{ flex: 1}}>
+      <PagerView
+        style={styles.viewPager}
+        initialPage={0}
+        showPageIndicator
+        onPageScroll={handleOnPageScroll}
+      >
         <View style={styles.page} key="1">
           <ThinkingSVG />
           <View style={{...styles.texts, ...styles.boldTexts}}>
@@ -26,7 +43,7 @@ return (
             <Text style={{ fontSize: 24, fontWeight: 'bold' }}>What you'll be learning?</Text>
           </View>
           <View style={styles.texts}>
-            <Text style={{ fontSize: 24, fontWeight: '500' }}>
+            <Text style={{ fontSize: 20, fontWeight: '500' }}>
               {'You’ll be learning the different areas and skills that relate to your chosen professions.'}
             </Text>
           </View>
@@ -37,15 +54,18 @@ return (
             <Text style={{ fontSize: 24, fontWeight: 'bold' }}>How you’ll be learning</Text>
           </View>
           <View style={styles.texts}>
-            <Text style={{ fontSize: 24, fontWeight: '500' }}>
+            <Text style={{ fontSize: 20, fontWeight: '500' }}>
               {`Each syllabus is designed by an industry professional.
 
-They will contain modules that build upon first principles and encourages an experimental approach to learning.`}
+They will contain modules that build upon first principles and encourages an experimental approach to learning.
+
+A mentor from the industry will be there to guide you through your journey.`}
             </Text>
           </View>
         </View>
       </PagerView>
-    </View>
+      {showContinue && <ContinueButton onPress={() => navigation.navigate('StartOne')} text="Continue" />}
+    </SafeAreaView>
   );
 };
 
