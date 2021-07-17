@@ -15,7 +15,7 @@ return (
             <Text style={{ fontSize: 24, fontWeight: 'bold' }}>Not sure what you want to study in the future?</Text>
           </View>
           <View style={styles.texts}>
-            <Text style={{ fontSize: 24, fontWeight: '500' }}>
+            <Text style={{ fontSize: 20, fontWeight: '500' }}>
               {'Footsteps is an innovative learning method that promotes learning by intuition and first principles through a mentorship environment.'}
             </Text>
           </View>

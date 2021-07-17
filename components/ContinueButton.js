@@ -17,7 +17,7 @@ export const ContinueButton = ({navigation, text, style }) => {
 const styles = StyleSheet.create({
   button: {
     height: 70,
-    width: 300,
+    width: 320,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 100,

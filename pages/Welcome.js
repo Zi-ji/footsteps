@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   },
   title: {
     maxWidth: 200,
-    marginLeft: 60,
+    marginLeft: 45,
     alignSelf: 'flex-start',
   }
 });
