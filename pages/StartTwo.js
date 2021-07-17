@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView, View, TextInput } from 'react-native';
 
@@ -28,7 +27,7 @@ export const StartTwo = ({ navigation }) => {
         <TextInput style={styles.input}/>
       </View>
       <ContinueButton
-        onPress={() => navigation.navigate('Res')}
+        onPress={() => navigation.navigate('ResultOne')}
         text="Continue"
         style={{alignSelf: 'center'}}
       />

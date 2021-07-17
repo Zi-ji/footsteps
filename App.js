@@ -10,6 +10,7 @@ import StartOne from './pages/StartOne.js';
 import Subjects from './pages/Subjects.js';
 import Tab from './components/NavigatorTab';
 import StartTwo from './pages/StartTwo.js';
+import ResultOne from './pages/ResultOne';
 
 const Stack = createStackNavigator();
 
@@ -42,6 +43,11 @@ export const App = () => {
             options={{headerShown : false}}
             name="StartTwo"
             component={StartTwo}
+          />
+          <Stack.Screen
+            options={{headerShown : false}}
+            name="ResultOne"
+            component={ResultOne}
           />
           <Stack.Screen
             options={{ headerShown: false }}
