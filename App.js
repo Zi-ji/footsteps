@@ -12,14 +12,11 @@ import Tab from './components/NavigatorTab';
 import StartTwo from './pages/StartTwo.js';
 import ResultOne from './pages/ResultOne';
 import PhysicsOne from './pages/PhysicsOne.js';
-<<<<<<< HEAD
 import Header from './components/Header';
 import { View, Text, TouchableOpacity } from 'react-native';
-=======
 import Quiz from './pages/Quiz.js';
 import Circular from './pages/Circular.js';
 import FlashCard from './pages/FlashCard.js';
->>>>>>> 1993c4e1134092057ddff00d15eb5e28577de4ed
 
 const Stack = createStackNavigator();
 
