@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Pressable } from 'react-native';
 
 import MathSVG from '../assets/MathSVG';
 import PhysicsSVG from '../assets/PhysicsSVG';
@@ -46,7 +46,11 @@ export const Subjects = ({ navigation }) => {
             </View>
           </View>
         </View>
-        <View style={{...styles.subjectCard, ...styles.physicsGreen}}>
+        
+        <Pressable
+          style={{...styles.subjectCard, ...styles.physicsGreen}}
+          onPress={() => navigation.navigate('PhysicsOne')}
+        >
           <View style={{ ...styles.leftColumn}}>
             <PhysicsSVG />
             <Text style={{ fontSize: 18, fontWeight: 'bold', color: 'white'}}>
@@ -71,7 +75,8 @@ export const Subjects = ({ navigation }) => {
               </Text>
             </View>
           </View>
-        </View>
+        </Pressable>
+
         <View style={{...styles.subjectCard, ...styles.programmingGreen}}>
           <View style={{ ...styles.leftColumn}}>
             <ProgrammingSVG />

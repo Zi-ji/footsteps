@@ -36,6 +36,20 @@ export const Feed = () => {
               Today
             </Text>
           </View>
+          <View>
+            <Text style={{ 
+              fontSize: 18, 
+              fontWeight: 'bold', 
+              marginLeft: 27,
+              marginBottom: 27,
+              color: 'white'
+            }}>
+              Hi
+            </Text>
+            <View>
+
+            </View>
+          </View>
         </View>
       </View>
     </SafeAreaView>
