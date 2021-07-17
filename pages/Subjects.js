@@ -1,18 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import MathSVG from '../assets/MathSVG';
 import PhysicsSVG from '../assets/PhysicsSVG';
 import ProgrammingSVG from '../assets/ProgrammingSVG';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 export const Subjects = ({ navigation }) => {
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView style={{ ...styles.texts, ...styles.boldTexts, ...styles.centerText}}>
+    <View style={styles.container}>
+      <View style={{ ...styles.texts, ...styles.boldTexts, ...styles.centerText}}>
         <Text style={{ 
           fontSize: 36, 
           fontWeight: 'bold', 
-          marginTop: 80,
           marginLeft: 27,
           marginBottom: 27,
         }}>
@@ -96,8 +94,8 @@ export const Subjects = ({ navigation }) => {
             </View>
           </View>
         </View>
-      </ScrollView>
-    </SafeAreaView>
+      </View>
+    </View>
   );
 };
 
@@ -105,7 +103,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
   },
   subjectCard: {
     display: 'flex',
