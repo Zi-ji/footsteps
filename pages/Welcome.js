@@ -14,7 +14,7 @@ export const Welcome = ({ navigation }) => {
           </Text>
         </Text>
       </View>
-      <ContinueButton onPress={() => navigation.navigate('StartOne')} text="Continue" />
+      <ContinueButton onPress={() => navigation.navigate('Intro')} text="Continue" />
       <StatusBar barStyle="light-content" />
     </View>
   );

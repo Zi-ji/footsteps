@@ -63,7 +63,7 @@ A mentor from the industry will be there to guide you through your journey.`}
           </View>
         </View>
       </PagerView>
-      {showContinue && <ContinueButton />}
+      {showContinue && <ContinueButton style={{alignSelf: 'center'}} text="Continue" />}
     </View>
   );
 };
