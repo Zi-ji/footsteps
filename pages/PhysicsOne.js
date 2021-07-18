@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
     paddingTop: 50,
   },
   coursebox: {
-    backgroundColor: '#48A9A6',
+    backgroundColor: '#44cfca',
     borderRadius: 28,
     alignSelf: 'stretch',
     marginLeft: 27,

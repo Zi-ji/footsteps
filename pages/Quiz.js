@@ -11,7 +11,6 @@ export const Quiz = () => {
       alignItems: 'center',
     }}>
       <QuizSVG />
-      {/* We ran out of time here. Sorry! */}
     </View>
   );
 };

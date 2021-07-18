@@ -2,7 +2,8 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, ScrollView, Text, View, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { GiftedChat } from 'react-native-gifted-chat'
+import { GiftedChat } from 'react-native-gifted-chat';
+import { LogBox } from 'react-native';
 
 import MentorPic from '../assets/MentorPic';
 import TickSVG from '../assets/TickSVG';
@@ -34,7 +35,15 @@ export const MentorChat = ({navigation}) => {
       },
       {
         _id: 3,
-        createdAt: new Date(),
+        createdAt: new Date(Date.UTC(2020, 7, 11, 17, 20, 0)),
+        image: 'https://raw.githubusercontent.com/Zi-ji/footsteps/master/assets/Level.png',
+        // Any additional custom parameters are passed through
+      },
+      {
+        _id: 4,
+        text: 'You have been paired with mentor Albert.',
+        createdAt: new Date(Date.UTC(2020, 7, 11, 17, 20, 0)),
+        system: true,
         // Any additional custom parameters are passed through
       },
     ])
@@ -43,6 +52,8 @@ export const MentorChat = ({navigation}) => {
   const onSend = React.useCallback((messages = []) => {
     setMessages(previousMessages => GiftedChat.append(previousMessages, messages))
   }, [])
+  
+  LogBox.ignoreAllLogs();
 
   return (
       <GiftedChat
@@ -87,7 +98,7 @@ const styles = StyleSheet.create({
     paddingTop: 0,
   },
   coursebox: {
-    backgroundColor: '#48A9A6',
+    backgroundColor: '#44cfca',
     borderRadius: 28,
     alignSelf: 'stretch',
     marginLeft: 27,

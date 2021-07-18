@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
       marginTop: 50,
       marginLeft: 45,
       marginRight: 45,
-      backgroundColor: '#48A9A6',
+      backgroundColor: '#44cfca',
       borderRadius: 36,
     },
     spacer: {

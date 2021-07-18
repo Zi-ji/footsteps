@@ -10,7 +10,7 @@ export const Welcome = ({ navigation }) => {
     <SafeAreaView style={styles.container}>
       <View style={styles.title}>
         <Text style={{ fontSize: 36, fontWeight: '500' }}>Hey there, welcome to{' '}
-          <Text style={{ color: "#E76F51", fontWeight: 'bold' }}>
+          <Text style={{ color: "#fa6a46", fontWeight: 'bold' }}>
             Footsteps
           </Text>
         </Text>

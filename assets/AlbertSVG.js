@@ -20,7 +20,7 @@ function SvgComponent(props) {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       {...props}
     >
-      <Rect width={321} height={219} rx={28} fill="#48A9A6" />
+      <Rect width={321} height={219} rx={28} fill="#44cfca" />
       <Circle
         cx={161}
         cy={103}

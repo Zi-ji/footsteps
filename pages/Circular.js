@@ -11,7 +11,6 @@ export const Circular = () => {
       alignItems: 'center',
     }}>
       <CircularSVG />
-      {/* We ran out of time here. Sorry! */}
     </View>
   );
 };

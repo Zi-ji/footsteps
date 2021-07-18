@@ -28,26 +28,26 @@ const Tabs = () => {
           backgroundColor: '#F6F6F6',
           borderRadius: 36,
           height: 90,
-          color: '#E76F51',
+          color: '#fa6a46',
         },
-        activeTintColor: '#E76F51',
+        activeTintColor: '#fa6a46',
         showLabel: false,
       }}
       screenOptions={{gestureEnabled: false}}
     >
       <Tab.Screen name="Feed" component={Feed}
         options={{
-          tabBarIcon: ({ focused }) => <FeedSVG fill={focused ? '#E76F51' : "#969696"} style={{marginTop: 25}} />,
+          tabBarIcon: ({ focused }) => <FeedSVG fill={focused ? '#fa6a46' : "#969696"} style={{marginTop: 25}} />,
         }}
       />
       <Tab.Screen name="Subjects" component={Subjects} 
         options={{
-          tabBarIcon: ({ focused }) => <SubjectsIconSVG fill={focused ? '#E76F51' : "#969696"} style={{marginTop: 25}} />,
+          tabBarIcon: ({ focused }) => <SubjectsIconSVG fill={focused ? '#fa6a46' : "#969696"} style={{marginTop: 25}} />,
         }}
       />
       <Tab.Screen name="Settings" component={Settings}
         options={{
-          tabBarIcon: ({ focused }) => <SettingsIconSVG fill={focused ? '#E76F51' : "#969696"} style={{marginTop: 25}} />,
+          tabBarIcon: ({ focused }) => <SettingsIconSVG fill={focused ? '#fa6a46' : "#969696"} style={{marginTop: 25}} />,
         }}
       />
     </Tab.Navigator>

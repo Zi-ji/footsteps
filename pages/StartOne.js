@@ -21,7 +21,7 @@ export const StartOne = ({ navigation }) => {
         <Text style={{ fontSize: 24, fontWeight: '500', maxWidth: 180 }}>
           To start,{"\n"}
           choose at least{"\n"}
-          <Text style={{ color: "#E76F51", fontWeight: 'bold' }}>
+          <Text style={{ color: "#fa6a46", fontWeight: 'bold' }}>
             2 professions
           </Text>
           {"\n"}of interest.{"\n"}
@@ -34,7 +34,7 @@ export const StartOne = ({ navigation }) => {
           text="Physicist"
           stateFunc={setSelection}
           state={selection}
-          colour="#48A9A6"
+          colour="#44cfca"
         />
         <View style={{width: 12}}/>
         <CareerOption

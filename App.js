@@ -72,7 +72,7 @@ export const App = () => {
                 height: 150,
                 borderBottomLeftRadius: 28,
                 borderBottomRightRadius: 28,
-                backgroundColor: '#48A9A6',
+                backgroundColor: '#44cfca',
               },
               headerTitleStyle: {
                 color: '#ffffff',
@@ -111,7 +111,7 @@ export const App = () => {
                 height: 150,
                 borderBottomLeftRadius: 28,
                 borderBottomRightRadius: 28,
-                backgroundColor: '#48A9A6',
+                backgroundColor: '#44cfca',
               },
               headerTitleStyle: {
                 color: '#ffffff',
@@ -150,7 +150,7 @@ export const App = () => {
                 height: 150,
                 borderBottomLeftRadius: 28,
                 borderBottomRightRadius: 28,
-                backgroundColor: '#48A9A6',
+                backgroundColor: '#44cfca',
               },
               headerTitleStyle: {
                 color: '#ffffff',
@@ -189,7 +189,7 @@ export const App = () => {
                 height: 150,
                 borderBottomLeftRadius: 28,
                 borderBottomRightRadius: 28,
-                backgroundColor: '#48A9A6',
+                backgroundColor: '#44cfca',
               },
               headerTitleStyle: {
                 color: '#ffffff',
@@ -228,7 +228,7 @@ export const App = () => {
                 height: 150,
                 borderBottomLeftRadius: 28,
                 borderBottomRightRadius: 28,
-                backgroundColor: '#48A9A6',
+                backgroundColor: '#44cfca',
               },
               headerTitleStyle: {
                 color: '#ffffff',

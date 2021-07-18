@@ -1,0 +1,28 @@
+
+    <SafeAreaView style={styles.container}>
+    <View style={styles.coursebox}>
+      <View style={{
+        display: 'flex', 
+        flexDirection: 'column', 
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingTop: 20,
+        paddingBottom: 20,
+        marginLeft: 26,
+        marginRight: 29,
+      }}>
+        <Text style={{color: '#ffffff', fontWeight: '500', fontSize: 18, marginBottom: 10,}}>Your Mentor</Text>
+        <MentorPic />
+        <Text style={{color: '#ffffff', fontWeight: '600', fontSize: 18, marginTop: 10,}}>Albert</Text>
+        <View style={{flexDirection: 'row'}}>
+          <Text style={{color: '#ffffff', fontWeight: '600', fontSize: 15, marginTop: 5,}}>50 yrs{' '}</Text>
+          <Text style={{color: '#ffffff', fontWeight: '500', fontSize: 15, marginTop: 5,}}>in the industry</Text>
+        </View>
+      </View>
+    </View>
+    
+    
+    
+      
+    <StatusBar style="light" />
+    </SafeAreaView>

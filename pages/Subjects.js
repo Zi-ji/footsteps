@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#4357AD',
   },
   physicsGreen: {
-    backgroundColor: '#48A9A6',
+    backgroundColor: '#44cfca',
   },
   programmingGreen: {
     backgroundColor: '#0D324D',

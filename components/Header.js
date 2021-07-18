@@ -28,7 +28,7 @@ export const ContinueButton = ({title, sub}) => {
 const styles = StyleSheet.create({
   container: {
     alignSelf: 'stretch',
-    backgroundColor: '#48A9A6',
+    backgroundColor: '#44cfca',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'flex-end',

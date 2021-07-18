@@ -11,7 +11,7 @@ function SvgComponent(props) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <Rect width={100} height={100} rx={36} fill="#48A9A6" />
+      <Rect width={100} height={100} rx={36} fill="#44cfca" />
       <Path
         d="M49.5 44.451a5.049 5.049 0 100 10.098 5.049 5.049 0 000-10.098zm0 8.813a3.764 3.764 0 110-7.528 3.764 3.764 0 010 7.528z"
         fill="#fff"

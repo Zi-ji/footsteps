@@ -11,7 +11,6 @@ export const FlashCard = () => {
       alignItems: 'center',
     }}>
       <FlashCardSVG />
-      {/* We ran out of time here. Sorry! */}
     </View>
   );
 };

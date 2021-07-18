@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "mentor.me",
-    "slug": "mentor.me",
+    "name": "footsteps",
+    "slug": "footsteps",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
