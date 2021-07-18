@@ -19,7 +19,6 @@ export const Feed = () => {
         </Text>
         <View style={styles.post}>
           <FeedPost />
-          {/* We ran out of time here. Sorry! */}
         </View> 
       </ScrollView>
     </SafeAreaView>
